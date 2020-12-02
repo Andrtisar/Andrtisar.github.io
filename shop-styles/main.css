@@ -1,0 +1,37 @@
+.main-style {
+    color: darkslategray;
+    font-size: 20px;
+    background-color: lightgray; 
+    font-family: Arial; 
+    text-align: center;
+}
+h1, h3 {
+    color:darkorange;
+    font-style: italic;
+}
+.basic-list {
+    text-align: left;
+    margin-left: 25% ;
+    color: blue;
+}
+.main-link {
+    font-size: 24px;
+    color:darkblue;
+    font-style: bold;
+}
+.secondary-link {
+    font-size: 22px;
+    color:cyan;
+    font-style: italic;
+}
+.price {
+    font-size: 26px;
+    color: yellow;
+    font-style: bold;
+}
+.other-product {
+    margin-left: 25%;
+    width: 50%;
+    align-content: center;
+    margin-bottom: 15px;
+}

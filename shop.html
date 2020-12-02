@@ -2,35 +2,17 @@
 <html>
     <head>
         <title>The BEST Internet Shop</title>
-        <style type="text/css">
-            h1, h3 {
-                color:darkorange;
-            }
-            .list {
-                text-align: left;
-                margin-left: 25% ;
-			    color: blue;
-			    font-weight: bold;
-            }
-            .price {
-                font-size: 26px;
-                color: yellow;
-                font-style: bold;
-            }
-            p {
-                color: darkslategray;
-                font-size: 20px;
-            }
-        </style>
+        <link rel="stylesheet" href="shop-styles/main.css">
     </head>
-    <body style="background-color: lightgray; font-family: Arial; text-align: center">
+    <body class="main-style">
         <h1>FOR SALE!</h1>
         <h3>Toshiba Tablet with Google Andoid 3.2, dual-core processor, 16 GB internal memory.</h3>
+        <a href="#features-list" class="secondary-link">Go to features</a>
         <p>This is tablet is 6 years old, but still works just fine. May be laggy and unstable, so this is for really desperate people.</p>
         <h2 class="price">$99,99</h2>
-        <img src="yes/tablet.jpg" width="800">
-        <p class="list">Features:</p>
-        <ul class="list">
+        <img src="images/tablet.jpg" width="1000" alt="Cool tablet">
+        <h3>Features:</h3>
+        <ul id="features-list" class="basic-list">
             <li>Android 3.2</li>
             <li>1280x800 resolution</li>
             <li>16 GB of internal memory</li>
@@ -44,5 +26,7 @@
         </ul>
         <a href="https://en.wikipedia.org/wiki/HTTP_404" class="price">Buy here now!</a>
         <p>Or just call this number: <b>8800-555-3535</b> !</p>
+        <a href="shop-reviews.html" class="main-link">View reviews</a>
+        <a href="shop-other-products.html" class="main-link">Views other products</a>
     </body>
 </html>
