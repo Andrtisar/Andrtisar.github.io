@@ -6,9 +6,21 @@
 </head>
 <body>
   <h1>Таж директорія, як links.html</h1>
-  Повернутися до links.html
+  <a href="links.html" title="Back to internal links page">Повернутися до links.html</a>
   
   <h1 id="top">Посилання на розділи тієї ж сторінки</h1>
+  <section>
+    <ul>
+      <!-- Link to every section in the page -->
+      <li><a href="#section1">#розділ1</a></li>
+      <li><a href="#section2">#розділ2</a></li>
+      <li><a href="#section3">#розділ3</a></li>
+      <li><a href="#section4">#розділ4</a></li>
+      <li><a href="#section5">#розділ5</a></li>
+      <li><a href="#section6">#розділ6</a></li>
+    </ul>
+
+  </section>
 
   <section id="section1">
     <h3>(#розділ1) Розділ 1</h3>
@@ -33,7 +45,7 @@
   <div>
     <h2><a name="section6">(#розділ6) Розділ 6</a></h2>
     <p>
-      Повернутися до початку: Повернутися до початку
+      Повернутися до початку: <a href="#top">Повернутися до початку</a>
     </p>
   </div>
 </body>

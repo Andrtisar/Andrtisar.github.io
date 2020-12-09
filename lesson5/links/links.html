@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Посилання</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <h1 id="top">Зовнішні посилання</h1>
@@ -10,31 +11,48 @@
     <p>
       Посилання на сторінку Miratech курсу у Facebook!
       <!-- link to Facebook page WITH TARGET-->
+      <a href="https://www.facebook.com/miratechgroup" target="_blank" title="Like Our Page!">Facebook сторінка</a>
     </p>
   </section>
   <h1>Внутрішні посилання</h1>
   <section>
     Ми можемо посилатись на файл у тій самій директорії, що й цей HTML-файл:
-    Посилання на файл у тому ж каталозі
+    <a href="links-same-page.html" title="same dir link">Посилання на файл у тому ж каталозі</a>
 
-    <div>DIV посилання на файл у тому ж каталозі</div>
+    <a href="links-same-page.html#section6" title="link to the section with DIV">
+      <div> DIV посилання на файл у тому ж каталозі</div>
+    </a>
 	
 	<h1>Посилання на файли:</h1>
 	<ul>
-		<li>Посилання на файл pdf</li>
-		<li>Посилання на файл zip</li>
+		<li><a href="resources/HLO_Miniatures_Demo.pdf" title="File pdf" target="_blank">Посилання на файл pdf</a></li>
+		<li><a href="file:resources/HLO.zip" title="File zip">Посилання на файл zip</a></li>
 	</ul>
   </section>
   <p>
-	Send me a message
+	<a href="mailto:estupnikov@gmail.com" title="This is my email">Send me a message</a>
   </p>
   <section>
   <h1>Only Thing We Have to Fear Is Fear Itself”</h1>
 	<p>
+		<img src="picture-with-quote.jpg" width="400" height="235" alt="Picture with a quote">
 		<blockquote>It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat.</blockquote>
+	</p>
+	<p>
+		<a href="https://en.wikipedia.org/wiki/Theodore_Roosevelt" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Coat_of_Arms_of_Theodore_Roosevelt.svg/800px-Coat_of_Arms_of_Theodore_Roosevelt.svg.png" height="300"></a>
 	</p>
 	<p>Theodore Roosevelt 1910 &copy; Copyright</p>
   </section>
+  <section>
+    <h1>Audio and Video</h1>
+		<video src="cat_hacker.mp4" controls height="400" poster="poster.png">
+			<p>Ваш браузер не поддерживает HTML5 видео. Используйте <a href="cat_hacker.mp4">ссылку на видео</a> для доступа.</p> 
+		</video>
+		<audio controls>
+			<source src="Motorbike_TrackTribe.mp3" type="audio/mp3"> 
+			<p>Your browser doesn't support HTML5 audio.</p>
+		</audio>
+  </section>  
 </body>
 </html>
 

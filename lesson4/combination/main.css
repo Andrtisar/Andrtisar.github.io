@@ -1,6 +1,7 @@
 h2 {
-  color: #565656;
+    color: #565656;
 }
+
 .menu > li {
   color: #0404ba;
 }
@@ -10,17 +11,42 @@ h2 {
   font-size: 18pt;
   font-weight: bold;
 }
+
 .category-menu > li {
   line-height: 1.5;
   font-size: 16pt;
 }
 
 .main-menu > li.active {
-  color: black;
   font-size: 20pt;
-}
-.category-menu > li.active {
   color: black;
+}
+
+.category-menu > li.active {
   font-size: 17pt;
+  color: black;
   font-weight: bold;
+}
+
+/*
+Здесь мы размещаем комментарии.
+*/
+
+div p {
+	color: green;
+	font-style: italic;
+}
+
+div > p {
+	color: blue;
+	font-weight: bold;
+}
+
+p.highlight {
+	color: red;
+	text-decoration: underline;
+}
+
+.main.highlight {
+	text-transform: uppercase;
 }
