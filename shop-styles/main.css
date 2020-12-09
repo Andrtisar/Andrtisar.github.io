@@ -5,6 +5,14 @@
     font-family: Arial; 
     text-align: center;
 }
+.textwall-style {
+    color: darkslategray;
+    font-size: 20px;
+    background-color: lightgray; 
+    font-family: Arial; 
+    margin-left: 25%;
+    margin-right: 25%;
+}
 h1, h3 {
     color:darkorange;
     font-style: italic;
@@ -29,9 +37,47 @@ h1, h3 {
     color: yellow;
     font-style: bold;
 }
+.price:hover {
+    font-size: 26px;
+    color: goldenrod;
+    font-weight: bolder;
+}
 .other-product {
     margin-left: 25%;
     width: 50%;
     align-content: center;
     margin-bottom: 15px;
+}
+
+
+.dropdown-menu li a:hover {
+    background-color: limegreen;
+}
+.dropdown-menu label {
+    color:darkgoldenrod;
+    font-style: italic;
+    font-size: 26px;
+}
+.dropdown-menu {
+    position: relative; 
+    height: 150px;
+}
+.dropdown-menu input, .dropdown-menu ul { 
+    display: none;
+}
+.dropdown-menu label {
+    cursor: pointer; 
+}
+.dropdown-menu ul {
+    position: absolute;
+    top: 25px;
+    left: 30%;
+}
+.dropdown-menu :checked ~ ul {
+    display: inline-block;
+}
+.dropdown-list {
+    text-align: left;
+    margin-top: 7.5px;
+    color: blue;
 }

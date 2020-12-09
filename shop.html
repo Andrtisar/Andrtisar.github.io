@@ -5,10 +5,32 @@
         <link rel="stylesheet" href="shop-styles/main.css">
     </head>
     <body class="main-style">
+
+        <div class="dropdown-menu">
+            <input type="checkbox" id="outside-menu">
+            <label for="outside-menu">Outside links</label>
+            <ul class="dropdown-list">
+                <li><a href="mailto:andreysheremet@ukr.net" title="This is my email" class="main-link">Email me</a></li>
+                <li><a href="https://github.com/Andrtisar/Andrtisar.github.io" title="This is my repository" class="main-link">My Github</a></li>
+                <li><a href="https://youtu.be/9k8Rlokzbnw" class="main-link" title="This is funny">Wow, Iphone</a></li>
+                <li><a href="https://youtu.be/AgB9tLTcRmk" class="main-link" title="This is cool">Kind of unrelated, but I think this video is cool</a></li>
+            </section>
+        </div>
+
+        <div class="dropdown-menu">
+            <input type="checkbox" id="inside-menu">
+            <label for="inside-menu">Main links</label>
+            <ul class="dropdown-list">
+                <li><a href="#features-list" title="Features" class="main-link">Go to features</a></li>
+                <li><a href="shop-text-wall.html" title="Bee Movie Script" class="main-link">Go... somewhere. I'm not sure what this is supposed to be</a></li>
+                <li><a href="shop-reviews.html" title="Reviews" class="main-link">View reviews</a></li>
+                <li><a href="shop-other-products.html" title="Other Products" class="main-link">View other products</a></li>
+            </section>
+        </div>
+
         <h1>FOR SALE!</h1>
         <h3>Toshiba Tablet with Google Andoid 3.2, dual-core processor, 16 GB internal memory.</h3>
-        <a href="#features-list" class="secondary-link">Go to features</a>
-        <p>This is tablet is 6 years old, but still works just fine. May be laggy and unstable, so this is for really desperate people.</p>
+        <p>This tablet is 6 years old, but still works just fine. May be laggy and unstable, so this is for really desperate people.</p>
         <h2 class="price">$99,99</h2>
         <img src="images/tablet.jpg" width="1000" alt="Cool tablet">
         <h3>Features:</h3>
@@ -26,7 +48,6 @@
         </ul>
         <a href="https://en.wikipedia.org/wiki/HTTP_404" class="price">Buy here now!</a>
         <p>Or just call this number: <b>8800-555-3535</b> !</p>
-        <a href="shop-reviews.html" class="main-link">View reviews</a>
-        <a href="shop-other-products.html" class="main-link">Views other products</a>
+        <a href="#top">Back to top</a>
     </body>
 </html>
