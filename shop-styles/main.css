@@ -32,6 +32,9 @@ h1, h3 {
     color:cyan;
     font-style: italic;
 }
+li a.secondary-link:hover {
+    background-color: yellowgreen;
+}
 .price {
     font-size: 26px;
     color: yellow;
