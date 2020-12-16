@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document Flow</title>
+<style>
+  p {
+    background-color: lightgreen;
+    margin: 10px;
+    border: gray 1px solid;
+  }
+
+  span {
+      background-color: lightskyblue;
+      border: black 1px solid;
+  }
+
+  .second-block {
+      width: 400px;
+  }
+
+</style>
+</head>
+<body>
+    <p>Первый блоковый элемент.</p>
+    <p class="second-block">
+        Второй блок. В нем много текста и у него задана ширина 
+        (не забывайте ставить единицы измерения).
+        Вероятно, он будет занимать больше одной строки на странице.
+        При этом переносы строк в макете - совсем не такие, как
+        на странице.
+    </p>
+    <p>
+        В этом абзаце есть несколько <span>строчных элементов</span>. 
+        Когда <span>линейный элемент</span> не помещается в строку - 
+        он тоже переносится на новую. Но при этом не создается отдельный блок.
+        Например, как в этом <span>строчном элементе, в котором опять 
+        довольно много текста</span> (и он скорее всего будет перенесен на другую строку).  
+    </p>
+    <p>
+        Изображения - строчные элементы. Именно поэтому эта картинка <img class="positioned" src="img\base\small.jpg"> отбражается в строке.
+        А если более широкая <img src="img\base\wide.jpg"> не влезает - то ее переносят на новую.
+    </p>
+
+    <p>Добавим много Lorem Ipsum для прокрутки</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at ipsum feugiat, iaculis mauris sit amet, varius nisl. Quisque eget metus in ipsum viverra congue. Suspendisse egestas, nibh nec aliquam faucibus, massa magna lobortis augue, at pulvinar nulla mi sit amet massa. Morbi vel nunc pretium, faucibus est viverra, efficitur metus. Aenean pretium sem non facilisis facilisis. Donec pulvinar posuere urna, a molestie sem dictum in. Morbi accumsan rhoncus risus, in tempus turpis consectetur sed.</p>
+    <p>Nunc non dolor faucibus, viverra magna in, tristique quam. Nullam est massa, venenatis ac est quis, aliquet finibus felis. Aliquam iaculis, ex non aliquam semper, ligula turpis efficitur leo, id dapibus quam diam eget sem. Sed neque magna, posuere dignissim egestas id, aliquet eu leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ut erat accumsan, faucibus sem in, faucibus enim. Vivamus imperdiet urna metus, non rutrum turpis ornare a. Nunc egestas in est eget vulputate. Sed nec fermentum mauris, eget placerat neque. Mauris in justo tempor, vestibulum eros at, pellentesque purus. Aenean fringilla turpis at vulputate pellentesque. Praesent vitae libero a sapien suscipit eleifend. Proin porta risus lobortis, tincidunt ipsum eu, iaculis quam. Donec laoreet lectus ac venenatis volutpat. Suspendisse potenti.</p>
+    <p>Sed in lacus a magna maximus sollicitudin eu at dui. Aliquam eu blandit arcu. Donec congue enim eget turpis facilisis, non auctor mauris vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean hendrerit placerat sodales. Curabitur id justo in enim tincidunt consectetur. Quisque et augue vel sem ultrices gravida eu id velit. Proin tellus libero, pulvinar sed felis sit amet, dictum rhoncus ipsum. Ut id tristique orci.</p>
+    <p>Sed id faucibus massa. Nam pulvinar ante risus, eu venenatis mi pellentesque sed. Quisque a quam sed massa consequat pretium. In id feugiat mi, nec ultrices nulla. Curabitur porttitor imperdiet risus, vitae interdum ex mattis vel. Sed elementum nisi faucibus purus accumsan, eu tristique diam consectetur. Proin porta dictum ante vitae luctus. Nam laoreet rhoncus maximus.</p>
+    <p>Nam vel finibus velit. Proin ante erat, accumsan pharetra tellus et, aliquam sagittis elit. Maecenas consectetur venenatis tempor. Suspendisse ut elit a risus sodales maximus. Sed tempor luctus nulla, ac pharetra felis auctor id. Integer sodales elit eget lacus ornare, blandit sodales tellus tempus. Donec eu faucibus ante, nec facilisis dolor. In rutrum ligula eu tincidunt pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam turpis lorem, semper nec aliquet vitae, ultricies eget urna. Quisque a ultrices turpis. Sed maximus vestibulum felis sed venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sagittis lectus efficitur consectetur pellentesque. Cras ullamcorper pretium arcu, sed tristique libero ultrices sed. Curabitur ac rhoncus lectus, et pellentesque urna.</p>
+
+</body>
+</html>

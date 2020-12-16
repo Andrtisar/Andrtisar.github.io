@@ -4,8 +4,88 @@
 <meta charset="utf-8">
 <title>Box Model</title>
 <style>
-  .box{
+  .box {
     font-size: 24px;
+    /* padding-top: 8px;
+    padding-bottom: 8px; */
+    padding: 8px;
+  }
+
+  .box.first {
+    background-color: green;
+    height: 300px;
+    width: 200px;
+    border: 2px solid red;
+    margin: 50px;
+  }
+
+  .box.second {
+    background-color: yellow;
+    border: dotted 4px blue;
+    border-top-style: solid;
+    margin: 10px;
+  }
+
+  .container {
+    background-color: gray;
+    border: solid 3px green;
+    width: 500px;
+    /* height: 600px; */
+    overflow: auto;
+
+    background-image: url(fire.png), url(snow.png);
+    background-position: top right, bottom right;
+    background-repeat: no-repeat, repeat-x;
+    background-attachment: scroll, fixed;
+  }
+
+  .string {
+    background-color: hotpink;
+    display: block;
+    margin: 10px;
+  }
+
+  .join {
+    display: inline;
+    background-color: yellowgreen;
+  }
+
+  div.gallery {
+    background-color: lightsteelblue;
+    border: steelblue solid 3px;
+    height: 800px;
+    width: 900px;
+  }
+
+  div.image {
+    margin: 10px;
+    border: gray solid 3px;
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+  }
+
+  div.image:hover {
+    border: red solid 5px;
+    width: 400px;
+    height: 400px;
+  }
+
+  div#image1 {
+    background-image: url("img/gallery/image1upd.jpg");
+    background-size: cover;
+  }
+  div#image2 {
+    background-image: url("img/gallery/image2upd.jpg");
+    background-size: cover;
+  }
+  div#image3 {
+    background-image: url("img/gallery/image3upd.jpg");
+    background-size: cover;
+  }
+  div#image4 {
+    background-image: url("img/gallery/image4upd.jpg");
+    background-size: cover;
   }
 
 </style>
@@ -13,18 +93,32 @@
 <body>
 <h1>Box Model Example</h1>
 
-<div class="box first">
-  First boxt content. 
-  Для демонстрации необходимости отступов - Й!
+<div class="container">
+  <div class="box first">
+    First boxt content.  
+  </div>
+
+  <div class="box second">
+    <p class="join">Для демонстрации необходимости отступов - Й!</p>
+    <p class="join">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor sem, vehicula eu dui ac, lobortis eleifend lacus. Aliquam tempus orci quis orci varius, ut efficitur libero luctus. <span class="string">Curabitur ultrices est eu hendrerit lobortis.</span> Praesent quis dapibus odio, sed mattis eros. Quisque varius pellentesque vulputate. Nunc eu tincidunt justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <p>Ut tempor bibendum mi, in pellentesque ante sodales in. Pellentesque posuere turpis in dignissim accumsan. Suspendisse in suscipit dui. Praesent quis mauris nisi. Pellentesque tristique nunc egestas ultricies elementum. Praesent egestas, mauris id venenatis finibus, felis mauris pulvinar mi, vitae ullamcorper neque justo ut sem. Nullam ac pretium lectus, facilisis dictum magna. Quisque sagittis mauris dolor, id luctus arcu suscipit id.</p>
+  </div>
 </div>
 
-<div calss="box second">
-  Second box content.
+<h1>Добавим галерею</h1>
+<div class="gallery">
+  <div>
+    <div class="image" id="image1"></div>
+    <div class="image" id="image2"></div>
+  </div>
+  <div>
+    <div class="image" id="image3"></div>
+    <div class="image" id="image4"></div>
+  </div>
 </div>
+
+<div><a href="test/another-page.html">Link to antoher page</a></div>
 
 </body>
 </html>
-
-
-
-
