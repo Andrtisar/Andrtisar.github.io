@@ -16,13 +16,120 @@
   }
 
   .second-block {
-      width: 400px;
+      width: 40%;
+      background-color: tomato;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      z-index: 10;
   }
+
+  p.positioned {
+    position: relative;
+    left: 15px;
+    top: 30px;
+    background-color: yellowgreen;
+  }
+  img.positioned {
+    position: absolute;
+    top: 300px;
+    z-index: 11;
+  }
+  /* p.container {
+    position: relative;
+  } */
+  img.scrollable {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    z-index: -1;
+  }
+  .send {
+    background-color: violet;
+    padding: 5px;
+    padding-left: 10px;
+  }
+  .pic {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    background-color: unset;
+    border: unset;
+  }
+
+  div.gallery {
+    position: relative;
+    background-color: lightsteelblue;
+    border: steelblue solid 3px;
+    height: 800px;
+    width: 800px;
+  }
+
+  div.image {
+    margin: 10px;
+    border: gray solid 3px;
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+
+  div#image1 {
+    background-image: url("img/gallery/image1upd.jpg");
+    top: 0px;
+    left: 0px;
+  }
+  div#image1:hover {
+    background-image: url("img/gallery/image1.jpg");
+    width: 600px;
+    z-index: 20;
+    top: 225px;
+    left: 100px;
+  }
+  div#image2 {
+    background-image: url("img/gallery/image2upd.jpg");
+    top: 400px;
+    left: 0px;
+  }
+  div#image2:hover {
+    background-image: url("img/gallery/image2.jpg");
+    width: 600px;
+    z-index: 20;
+    top: 225px;
+    left: 100px;
+  }
+  div#image3 {
+    background-image: url("img/gallery/image3upd.jpg");
+    top: 0px;
+    right: 0px;
+  }
+  div#image3:hover {
+    background-image: url("img/gallery/image3.jpg");
+    width: 600px;
+    z-index: 20;
+    top: 225px;
+    left: 100px;
+  }
+  div#image4 {
+    background-image: url("img/gallery/image4upd.jpg");
+    top: 400px;
+    right: 0px;
+  }
+  div#image4:hover {
+    background-image: url("img/gallery/image4.jpg");
+    width: 600px;
+    z-index: 20;
+    top: 225px;
+    left: 100px;
+  }
+
 
 </style>
 </head>
 <body>
-    <p>Первый блоковый элемент.</p>
+    <p class="positioned">Первый блоковый элемент.</p>
     <p class="second-block">
         Второй блок. В нем много текста и у него задана ширина 
         (не забывайте ставить единицы измерения).
@@ -37,9 +144,9 @@
         Например, как в этом <span>строчном элементе, в котором опять 
         довольно много текста</span> (и он скорее всего будет перенесен на другую строку).  
     </p>
-    <p>
+    <p class="container">
         Изображения - строчные элементы. Именно поэтому эта картинка <img class="positioned" src="img\base\small.jpg"> отбражается в строке.
-        А если более широкая <img src="img\base\wide.jpg"> не влезает - то ее переносят на новую.
+        А если более широкая <img class="scrollable" src="img\base\wide.jpg"> не влезает - то ее переносят на новую.
     </p>
 
     <p>Добавим много Lorem Ipsum для прокрутки</p>
@@ -50,5 +157,21 @@
     <p>Sed id faucibus massa. Nam pulvinar ante risus, eu venenatis mi pellentesque sed. Quisque a quam sed massa consequat pretium. In id feugiat mi, nec ultrices nulla. Curabitur porttitor imperdiet risus, vitae interdum ex mattis vel. Sed elementum nisi faucibus purus accumsan, eu tristique diam consectetur. Proin porta dictum ante vitae luctus. Nam laoreet rhoncus maximus.</p>
     <p>Nam vel finibus velit. Proin ante erat, accumsan pharetra tellus et, aliquam sagittis elit. Maecenas consectetur venenatis tempor. Suspendisse ut elit a risus sodales maximus. Sed tempor luctus nulla, ac pharetra felis auctor id. Integer sodales elit eget lacus ornare, blandit sodales tellus tempus. Donec eu faucibus ante, nec facilisis dolor. In rutrum ligula eu tincidunt pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam turpis lorem, semper nec aliquet vitae, ultricies eget urna. Quisque a ultrices turpis. Sed maximus vestibulum felis sed venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sagittis lectus efficitur consectetur pellentesque. Cras ullamcorper pretium arcu, sed tristique libero ultrices sed. Curabitur ac rhoncus lectus, et pellentesque urna.</p>
 
+    <div>
+        <span class="pic"><img src="img/base/mail.gif"></span>
+        <span class="send">Send mail with link to friend</span>
+    </div>
+
+    <h1>Добавим галерею</h1>
+    <div class="gallery">
+        <div>
+            <div class="image" id="image1"></div>
+            <div class="image" id="image2"></div>
+        </div>
+        <div>
+            <div class="image" id="image3"></div>
+            <div class="image" id="image4"></div>
+        </div>
+    </div>
 </body>
 </html>
