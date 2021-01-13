@@ -3,52 +3,68 @@
     <head>
         <title>The BEST Internet Shop</title>
         <link rel="stylesheet" href="shop-styles/main.css">
+        <script src="https://kit.fontawesome.com/3b88d962a4.js" crossorigin="anonymous"></script>
+        <style>
+            .fa-money-bill-wave-alt {
+                color: limegreen;
+            }
+            .fa-arrow-right {
+                color: lightblue;
+            }
+        </style>
     </head>
     <body class="main-style">
+        <header> <!-- I'm not sure if these tags did anything -->
+            <div class="dropdown-menu">
+                <input type="checkbox" id="outside-menu">
+                <label for="outside-menu">Outside links (Click on me)</label>
+                <ul class="dropdown-list, fa-ul" style="text-align: left;">
+                    <li><span class="fa-li"><i class="fas fa-arrow-right"></i></span><a href="mailto:andreysheremet@ukr.net" title="This is my email" class="main-link">Email me</a></li>
+                    <li><span class="fa-li"><i class="fas fa-arrow-right"></i></span><a href="https://github.com/Andrtisar/Andrtisar.github.io" title="This is my repository" class="main-link">My Github</a></li>
+                    <li><span class="fa-li"><i class="fas fa-arrow-right"></i></span><a href="https://youtu.be/9k8Rlokzbnw" class="main-link" title="This is funny">Wow, Iphone</a></li>
+                    <li><span class="fa-li"><i class="fas fa-arrow-right"></i></span><a href="uhh-no,-this-didn-t-age-well" class="main-link" title="This is cool">Kind of unrelated, but I think this video is cool</a></li>
+                </section>
+            </div>
+    
+            <div class="dropdown-menu">
+                <input type="checkbox" id="inside-menu">
+                <label for="inside-menu">Main links (Click on me)</label>
+                <ul class="dropdown-list, fa-ul" style="text-align: left;">
+                    <li><span class="fa-li"><i class="fas fa-arrow-right"></i></span><a href="#features-list" title="Features" class="main-link">Go to features</a></li>
+                    <li><span class="fa-li"><i class="fas fa-arrow-right"></i></span><a href="shop-variations/shop-text-wall.html" title="Bee Movie Script" class="main-link">Go... somewhere. I'm not sure what this is supposed to be</a></li>
+                    <li><span class="fa-li"><i class="fas fa-arrow-right"></i></span><a href="shop-variations/shop-reviews.html" title="Reviews" class="main-link">View reviews</a></li>
+                    <li><span class="fa-li"><i class="fas fa-arrow-right"></i></span><a href="shop-variations/shop-other-products.html" title="Other Products" class="main-link">View other products</a></li>
+                </section>
+            </div>
+        </header>
 
-        <div class="dropdown-menu">
-            <input type="checkbox" id="outside-menu">
-            <label for="outside-menu">Outside links (Click on me)</label>
-            <ul class="dropdown-list">
-                <li><a href="mailto:andreysheremet@ukr.net" title="This is my email" class="main-link">Email me</a></li>
-                <li><a href="https://github.com/Andrtisar/Andrtisar.github.io" title="This is my repository" class="main-link">My Github</a></li>
-                <li><a href="https://youtu.be/9k8Rlokzbnw" class="main-link" title="This is funny">Wow, Iphone</a></li>
-                <li><a href="https://youtu.be/AgB9tLTcRmk" class="main-link" title="This is cool">Kind of unrelated, but I think this video is cool</a></li>
-            </section>
-        </div>
+        <main>
+            <h1>FOR SALE!</h1>
+            <h3>Toshiba Tablet with Google Andoid 3.2, dual-core processor, 16 GB internal memory.</h3>
+            <p>This tablet is 6 years old, but still works just fine. May be laggy and unstable, so this is for really desperate people.</p>
+            <p>Also I love how this was originally a shop selling a tablet, but now I just don't know what this is supposed to be anymore.</p>
+            <h2><span class="price">$99,99</span></h2>
+            <img src="images/tablet.jpg" width="750" alt="Cool tablet">
+            <h3>Features:</h3>
+            <ul id="features-list" class="basic-list, fa-ul" style="text-align: left; color: lightblue; margin-left: 35%; margin-right: 20%;">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Android 3.2</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>1280x800 resolution</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>16 GB of internal memory</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>NVIDIA Tegra 2 dual-core mobile processor</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>2-megapixel front facing webcam</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>5-megapixel rear camera</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>mini USB</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>mini HDMI</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>microSD card slot</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>integrated GPS</li>
+            </ul>
+        </main>
 
-        <div class="dropdown-menu">
-            <input type="checkbox" id="inside-menu">
-            <label for="inside-menu">Main links (Click on me)</label>
-            <ul class="dropdown-list">
-                <li><a href="#features-list" title="Features" class="main-link">Go to features</a></li>
-                <li><a href="shop-variations/shop-text-wall.html" title="Bee Movie Script" class="main-link">Go... somewhere. I'm not sure what this is supposed to be</a></li>
-                <li><a href="shop-variations/shop-reviews.html" title="Reviews" class="main-link">View reviews</a></li>
-                <li><a href="shop-variations/shop-other-products.html" title="Other Products" class="main-link">View other products</a></li>
-            </section>
-        </div>
-
-        <h1>FOR SALE!</h1>
-        <h3>Toshiba Tablet with Google Andoid 3.2, dual-core processor, 16 GB internal memory.</h3>
-        <p>This tablet is 6 years old, but still works just fine. May be laggy and unstable, so this is for really desperate people.</p>
-        <p>Also I love how this was originally a shop selling a tablet, but now I just don't know what this is supposed to be anymore.</p>
-        <h2><span class="price">$99,99</span></h2>
-        <img src="images/tablet.jpg" width="750" alt="Cool tablet">
-        <h3>Features:</h3>
-        <ul id="features-list" class="basic-list">
-            <li>Android 3.2</li>
-            <li>1280x800 resolution</li>
-            <li>16 GB of internal memory</li>
-            <li>NVIDIA Tegra 2 dual-core mobile processor</li>
-            <li>2-megapixel front facing webcam</li>
-            <li>5-megapixel rear camera</li>
-            <li>mini USB</li>
-            <li>mini HDMI</li>
-            <li>microSD card slot</li>
-            <li>integrated GPS</li>
-        </ul>
-        <a href="https://en.wikipedia.org/wiki/HTTP_404" class="price">Buy here now!</a>
-        <p>Or just call this number: <b>8800-555-3535</b> !</p>
-        <a href="#top" style="color:hotpink">Back to top</a>
+        <footer>
+            <i class="fas fa-money-bill-wave-alt"></i><a href="https://en.wikipedia.org/wiki/HTTP_404" class="price">Buy here now!</a>
+            <p>Or just call this number: <b>8800-555-3535</b> !</p>
+            <a href="#top" style="color:hotpink">Back to top</a>
+        </footer>
+        
     </body>
 </html>

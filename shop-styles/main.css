@@ -75,7 +75,7 @@ li a.secondary-link:hover {
     color: lightblue;
 }
 
-
+/* 
 div.other-products {
     background-color: lightsteelblue;
     border: steelblue solid 3px;
@@ -134,7 +134,37 @@ div#image6 {
     background-image: url(../images/gun.jpg);
     background-size: 13em;
     background-position: center 25px;
+} */
+
+div.other-products2 {
+    background-color: lightsteelblue;
+    border: steelblue solid 3px;
+    min-width: 425px;
+    align-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
 }
+div.gallery-columns {
+    column-gap: 20px;
+    column-width: 400px;
+}
+div.product2 {
+    margin: 10px;
+    border: gray solid 3px;
+    background-color: white;
+    width: 350px;
+    height: 400px;
+    display: inline-block;
+    font-weight: bold;
+    color: lime;
+}
+div.product2:hover {
+    border:red double 7px;
+}
+div.product2 img {
+    max-height: 225px;
+}
+
 
 
 .actual-reviews {
@@ -153,9 +183,9 @@ div#image6 {
 }
 .fixed-menu {
     position: fixed;
-    left: 25px;
-    bottom: 25px;
+    top: 25px;
     width: 100px;
+    min-height: 250px;
     border: greenyellow 3px solid;
     background-color: honeydew;
 }
@@ -166,4 +196,22 @@ div#image6 {
 .advanced-list {
     text-align: left;
     color: yellowgreen;
+}
+
+
+.the-cat-box {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.the-cat-box div {
+    text-align: center;
+    margin: 8px;
+}
+.the-cat-box div img {
+    height: 300px;
+    max-width: 400px;
 }

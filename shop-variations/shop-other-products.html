@@ -3,19 +3,29 @@
 <head>
     <title>The BEST Internet Shop - other products</title>
     <link rel="stylesheet" href="../shop-styles/main.css">
+    <script src="https://kit.fontawesome.com/3b88d962a4.js" crossorigin="anonymous"></script>
+    <style>
+        .fa-money-bill-wave-alt {
+            color: limegreen;
+        }
+    </style>
 </head>
 <body class="main-style">
-    <h3>Play some music while looking through our wide range of products!</h3>
-    <audio controls>
-        <source src="../other/elevator_music.mp3" type="audio/mp3"> 
-        <p>Your browser doesn't support HTML5 audio. There is nothing I can do.</p>
-    </audio>
-    <div class="other-products">
+    <header> <!-- I'm not sure if these tags did anything -->
+        <h3>Play some music while looking through our wide range of products!</h3>
+        <audio controls>
+            <source src="../other/elevator_music.mp3" type="audio/mp3"> 
+            <p>Your browser doesn't support HTML5 audio. There is nothing I can do.</p>
+        </audio>
+    </header>
+    
+
+    <main>
+    <!-- <div class="other-products">
         <h1 style="color: green">Gallery</h1>
         <div class="product" id="image1">
             <p>IPhone IX</p>
             <a href="https://youtu.be/9k8Rlokzbnw" class="price"> $39,99</a>
-            <!-- When I try to add more text the position just breaks. I don't know why, I don't know how to fix this, so I'm just going to ignore it -->
         </div>
         <div class="product" id="image2">
             <p>These cool looking socks</p>
@@ -37,8 +47,63 @@
             <p>Gun</p>
             <a href="https://en.wikipedia.org/wiki/HTTP_404" class="price"> $68,99</a>
         </div>
-    </div>
+    </div> -->
     
-    <a href="../shop.html" class="main-link">Back to main product</a>
+    <div class="other-products2">
+        <h1 style="color: green">Gallery</h1>
+        <div class="gallery-columns">
+            <div class="product2">
+                <img src="../images/Phone.png">
+                <p>IPhone IX</p>
+                <p>No scam, an actual IPhone IX, one of its kind.</p>
+                <i class="fas fa-money-bill-wave-alt"></i><a href="https://youtu.be/9k8Rlokzbnw" class="price"> $39,99</a>
+            </div>
+            <div class="product2">
+                <img src="../images/socks.jpg">
+                <p>These cool looking socks</p>
+                <p>A perfect gift for Christmas! (actually don't)</p>
+                <i class="fas fa-money-bill-wave-alt"></i><a href="https://en.wikipedia.org/wiki/HTTP_404" class="price"> $41,99</a>
+            </div>
+            <div class="product2">
+                <img src="../images/mystery_box.jpg">
+                <p>Who knows whats inside?</p>
+                <p>No refunds.</p>
+                <i class="fas fa-money-bill-wave-alt"></i><a href="https://en.wikipedia.org/wiki/HTTP_404" class="price"> $99,99</a>
+            </div>
+            <div class="product2">
+                <img src="../images/bleach.jpeg">
+                <p>Bleach</p>
+                <p>Perfect after reading that Bee Movie Script copypasta.</p>
+                <i class="fas fa-money-bill-wave-alt"></i><a href="https://en.wikipedia.org/wiki/HTTP_404" class="price"> $19,99</a>
+            </div>
+            <div class="product2">
+                <img src="../images/chocolate.jpg">
+                <p>Box of chocolates</p>
+                <p>Date of expiration: 31.12.2020</p>
+                <i class="fas fa-money-bill-wave-alt"></i><a href="https://en.wikipedia.org/wiki/HTTP_404" class="price"> $21,99</a>
+            </div>
+            <div class="product2">
+                <img src="../images/gun.jpg">
+                <p>Gun</p>
+                <p>This is a gun.</p>
+                <i class="fas fa-money-bill-wave-alt"></i><a href="https://en.wikipedia.org/wiki/HTTP_404" class="price"> $68,99</a>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <h3>I wasn't sure where to add this, so here is a flexbox of my cat Phantom</h3>
+        <div class="the-cat-box">
+            <div><img src="../images/cat/aww.JPG"></div>
+            <div><img src="../images/cat/balcony.JPG"></div>
+            <div><img src="../images/cat/bed.jpg"></div>
+            <div><img src="../images/cat/computer.jpg"></div>
+            <div><img src="../images/cat/fridge.jpg"></div>
+            <div><img src="../images/cat/podium.jpg"></div>
+        </div>
+        <a href="../shop.html" class="main-link">Back to main product</a>
+    </footer>
+    
 </body>
 </html>
