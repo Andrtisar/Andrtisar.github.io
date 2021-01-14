@@ -9,14 +9,15 @@ nav ul {
 nav li {
     list-style: none;
     display: inline;
-    font-size: 24px;
-    margin-right: 8px;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
 }
 
 .container {
     width: 100%;
     display: flex;
     justify-content: center;
+    /* flex-wrap: wrap; */
 }
 
 .photo {
@@ -28,9 +29,63 @@ nav li {
 }
 
 .data {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .data ul {
     margin-top: 0px;
+}
+
+nav .fa-bars {
+    display: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+@media (max-width: 740px) {
+    .container {
+        display: block;
+    }
+    .photo {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        position: absolute;
+        top: 0px;
+        left: 0.25rem;
+    }
+    nav .fa-bars {
+        display: block;
+        text-align: left;
+    }
+    nav ul {
+        display: none;
+    }
+    nav:hover ul {
+        display: block;
+        /* max-width: 125px; */
+        background-color: lightseagreen;
+        margin-top: 0.25rem;
+        padding: 0.75rem;
+        text-align: left;
+    }
+    nav li {
+        display: block;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .data li {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+    .header {
+        height: 50px;
+    }
 }
