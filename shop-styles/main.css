@@ -1,3 +1,6 @@
+
+/* Main Styles */
+
 .main-style {
     color: lightsalmon;
     font-size: 20px;
@@ -34,7 +37,7 @@ li a.secondary-link:hover {
 .price {
     font-size: 26px;
     color: yellow;
-    font-style: bold;
+    font-weight: bold;
 }
 .price:hover {
     font-size: 26px;
@@ -42,13 +45,15 @@ li a.secondary-link:hover {
     font-weight: bolder;
 }
 
+/* Dropdown List */
+
 .dropdown-menu li a:hover {
     background-color: limegreen;
 }
 .dropdown-menu label {
     color:darkgoldenrod;
     font-style: italic;
-    font-size: 26px;
+    font-size: 1.5rem;
 }
 .dropdown-menu {
     position: relative; 
@@ -136,6 +141,8 @@ div#image6 {
     background-position: center 25px;
 } */
 
+/* Other Products */
+
 div.other-products2 {
     background-color: lightsteelblue;
     border: steelblue solid 3px;
@@ -165,9 +172,34 @@ div.product2 img {
     max-height: 225px;
 }
 
+/* Text Wall */
 
+.background-wide-bee {
+    background-image: url(../images/butwhy.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.textwall-style {
+    color: darkslategray;
+    font-size: 20px;
+    background-color: lightgray; 
+    font-family: Arial; 
+    margin-left: 25%;
+    margin-right: 25%;
+}
+h3, section, p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 5px;
+}
+.hidden-message {
+    display: none;
+}
 
-.actual-reviews {
+/* Reviews */
+
+/* .actual-reviews {
     position: absolute;
     left: 120px;
     top: 25px;
@@ -180,14 +212,21 @@ div.product2 img {
     top: 25px;
     display: inline-block;
     width: 40%;
+} */
+
+.reviews {
+    column-count: 2;
 }
+
 .fixed-menu {
     position: fixed;
     top: 25px;
     width: 100px;
-    min-height: 250px;
+    min-height: 150px;
     border: greenyellow 3px solid;
     background-color: honeydew;
+    margin-top: 0.25rem;
+    padding: 0.75rem;
 }
 .fixed-menu a {
     color: red;
@@ -198,13 +237,17 @@ div.product2 img {
     color: yellowgreen;
 }
 
+/* Cat gallery */
 
 .the-cat-box {
     background-color: lightskyblue;
     display: flex;
-    justify-content: space-between;
+    width: 60%;
+    margin-left: 20%;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    border: 3px darkred solid;
 }
 
 .the-cat-box div {
@@ -214,4 +257,84 @@ div.product2 img {
 .the-cat-box div img {
     height: 300px;
     max-width: 400px;
+}
+
+nav .fa-bars {
+    display: none;
+    color: green;
+}
+/* Mobile Phone Version and stuff */
+
+@media (max-width: 1225px) {
+    /* Reviews and all of that */
+    .reviews {
+        column-count: 1;
+    }
+    nav.reviews-nav {
+        position: fixed;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    nav.reviews-nav .fa-bars {
+        display: block;
+        text-align: left;
+    }
+    nav.reviews-nav div.fixed-menu {
+        display: none;
+    }
+    nav.reviews-nav:hover div.fixed-menu {
+        position: relative;
+        display: block;
+        top: 0.5rem;
+        left: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    /* Main Menu */
+    .main-image {
+        width: 85%;
+    }
+    .dropdown-menu {
+        height: 12em;
+    }
+    .dropdown-menu ul {
+        left: 10%;
+    }
+    .dropdown-menu ul a{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .main-style {
+        font-size:smaller;
+        line-height: 1.5;
+    }
+    /* Cat Gallery */
+    .the-cat-box {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .the-cat-box div img {
+        max-width: 300px;
+    }
+    /* Text Wall */
+    .textwall-style {
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+    .hidden-message {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Gallery */
+    div.other-products2 {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    div.product2 {
+        width: 75%;
+    }
 }
