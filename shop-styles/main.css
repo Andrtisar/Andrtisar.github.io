@@ -270,6 +270,10 @@ nav .fa-bars {
     .reviews {
         column-count: 1;
     }
+    div.reviews-other-stuff video {
+        max-height: 400px;
+        width: 75%;
+    }
     nav.reviews-nav {
         position: fixed;
         top: 0.5rem;
@@ -296,7 +300,7 @@ nav .fa-bars {
         width: 85%;
     }
     .dropdown-menu {
-        height: 12em;
+        height: 13em;
     }
     .dropdown-menu ul {
         left: 10%;
@@ -333,8 +337,17 @@ nav .fa-bars {
     div.other-products2 {
         margin-left: 0%;
         margin-right: 0%;
+        min-width: 200px;
     }
     div.product2 {
         width: 75%;
+    }
+
+    
+    .basic-list {
+        margin-left: 5%;
+    }
+    audio {
+        max-width: 100%;
     }
 }
