@@ -292,6 +292,10 @@ nav .fa-bars {
         top: 0.5rem;
         left: 1rem;
     }
+    
+    audio {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -346,8 +350,5 @@ nav .fa-bars {
     
     .basic-list {
         margin-left: 5%;
-    }
-    audio {
-        max-width: 100%;
     }
 }
