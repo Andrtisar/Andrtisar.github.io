@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+                .slider {
+                        position:relative;
+                        width:700px;
+                        padding-top:370px;
+                        text-align:center;
+                }
+                .slider__check {
+                        position:absolute;
+                        clip:rect(0 0 0 0);
+                        overflow:hidden;
+                }
+                .slider__image {
+                        position:absolute;
+                        top:0;
+                        left:0;
+                }
+                .slider__label {
+                        overflow:hidden;
+                        display:inline-block;
+                        width:20px;
+                        height:20px;
+                        background:#069;
+                        border-radius:50%;
+                        text-indent:-9999px;
+                }
+
+                /* Display */
+                .slider__image {
+                        display:none;
+                }
+                .slider__check:checked + .slider__label + .slider__image {
+                        display:block;
+                }
+
+                /* Current */
+                .slider__check:checked + .slider__label {
+                        background:#C00;
+                }
+
+        </style>
+</head>
+<body>
+	<div class="slider">
+		<input type="radio" name="slider__check" class="slider__check" id="slider__check-1" checked><label for="slider__check-1" class="slider__label">1</label><img src="img/image1.jpg" alt="" class="slider__image">
+		<input type="radio" name="slider__check" class="slider__check" id="slider__check-2"><label for="slider__check-2" class="slider__label">2</label><img src="img/image2.jpg" alt="" class="slider__image">
+		<input type="radio" name="slider__check" class="slider__check" id="slider__check-3"><label for="slider__check-3" class="slider__label">3</label><img src="img/image3.jpg" alt="" class="slider__image">
+		<input type="radio" name="slider__check" class="slider__check" id="slider__check-4"><label for="slider__check-4" class="slider__label">4</label><img src="img/image4.jpg" alt="" class="slider__image">
+	</div>
+</body>
+</html>

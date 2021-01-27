@@ -237,6 +237,10 @@ h3, section, p {
     color: yellowgreen;
 }
 
+.not-bootstrap-just-a-card-list {
+    text-align: left;
+    color: blueviolet;
+}
 /* Cat gallery */
 
 .the-cat-box {

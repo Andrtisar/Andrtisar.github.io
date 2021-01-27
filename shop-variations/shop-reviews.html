@@ -3,11 +3,13 @@
 <head>
     <title>The BEST Internet Shop - reviews</title>
     <link rel="stylesheet" href="../shop-styles/main.css">
+    <link rel="stylesheet" href="../shop-styles/bootstrap.css">
     <script src="https://kit.fontawesome.com/3b88d962a4.js" crossorigin="anonymous"></script>
 </head>
 <body class="main-style">
     
-    <nav class="reviews-nav">
+    <!-- Old Version -->
+    <!-- <nav class="reviews-nav">
         <i class="fas fa-bars fa-2x"></i>
         <div class="fixed-menu">
             <h3>Links</h3>
@@ -37,6 +39,52 @@
             <h3>Side quest? Huh?</h3>
             <p>So I found this file on my computer, I'm not sure what to do with it, so it shall live on forever on this page</p>
             <a href="file:../other/Quest.pptx" title="File pptx" style="color:hotpink">Quest?</a>
+        </div>
+    </main> -->
+
+    <!-- Cool Bootstrap Version -->
+
+    <nav>
+        <div class="container bg-success">
+            <h3>Links</h3>
+            <a href="../shop.html">Back to products</a>
+            <a href="shop-other-products.html">Views other products</a>
+            <a href="shop-blog.html">Go to blog</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container bg-primary">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <h3 class="card-title">Reviews</h3>
+                        <img src="../images/tablet_2.jpg" class="card-img-top" width="75%" alt="Cool tablet">
+                        <div class="card-body">
+                            <ul class="not-bootstrap-just-a-card-list">
+                                <li><span style="color: green;">★★★★★</span> Great tablet, perfect for watching videos while laying in bed. Can't wait for it to arrive.</li>
+                                <li><span style="color: yellow;">★★★</span> Good, but really lagy. I'm starting to think it is like 6 years old. You should've written that in the description.</li>
+                                <li><span style="color: red;">★</span> This thing blew up in my hand</li>
+                                <li><span style="color: lime;">★★★★</span> Wait, how do we all have this tablet, I thought they were selling a single copy. Anyway, good overall.</li>
+                                <li><span style="color: red;">★</span> (Ah yes, the classic 1 star with no comment)</li>
+                                <li><span style="color: yellow;">★★★</span> I guess its fine</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <h3 class="card-title">A definitely related video</h3>
+                        <video src="../other/wow_iphone.mp4" controls width="75%" style="align-self: center;">
+                            <p>Oops, seems like your poor browser can't show this video. If you are interested, <a href="https://youtu.be/9k8Rlokzbnw">here it is</a>.</p> 
+                        </video>
+                        <h3>Side quest? Huh?</h3>
+                        <p class="card-text" style="color: blueviolet;">So I found this file on my computer, I'm not sure what to do with it, so it shall live on forever on this page.</p>
+                        <a href="file:../other/Quest.pptx" title="File pptx">Quest?</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
