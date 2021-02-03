@@ -80,6 +80,9 @@ li a.secondary-link:hover {
     color: lightblue;
 }
 
+
+
+
 /* 
 div.other-products {
     background-color: lightsteelblue;
@@ -267,6 +270,112 @@ nav .fa-bars {
     display: none;
     color: green;
 }
+
+/* Animations */
+
+.fa-money-bill-wave-alt {
+    color: limegreen;
+    transition: transform 2s;
+    font-size: 30px;
+}
+.spinning-cash:hover .fa-money-bill-wave-alt {
+    transform: rotate(1440deg);
+}
+
+.shining-stars {
+    animation: 0.5s shine infinite alternate linear;
+    position: absolute;
+}
+
+.spinning-box {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    transition: transform 2s;
+}
+
+.spinning-box:hover {
+    transform: rotate(720deg);
+}
+
+.for-sale {
+    position: relative;
+    text-align: left;
+    width: 5.8em;
+    animation: 5s for-sale infinite alternate linear;
+}
+
+@keyframes shine {
+    from {
+        font-size: 90%;
+    }
+    to {
+        font-size: 110%;
+    }
+}
+
+@keyframes for-sale {
+    from {
+        left: 85%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+/* Slider stuff */
+
+.slider {
+    position:relative;
+    width: 200px;
+    margin-left: 43%;
+    padding-top:350px;
+    text-align:center;
+    align-self: center;
+    background-color: lightskyblue;
+    border: 3px solid darkred;
+}
+.slider__check {
+    position:absolute;
+    clip:rect(0 0 0 0);
+    overflow:hidden;
+}
+.slider__image {
+    max-height: 300px;
+    position:absolute;
+    top:0;
+    left: 8%;
+}
+.slider__label {
+    overflow:hidden;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:gray;
+    border-radius:50%;
+    text-indent:-9999px;
+}
+
+/* Display */
+.slider__image {
+    display:none;
+}
+.slider__check:checked + .slider__label + .slider__image {
+    display:block;
+}
+
+/* Current */
+.slider__check:checked + .slider__label {
+    background: green;
+}
+
+
+.rant-i-guess {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
 /* Mobile Phone Version and stuff */
 
 @media (max-width: 1225px) {

@@ -1,0 +1,72 @@
+.container {
+    border: solid 3px blue;
+    margin: 5px;
+}
+.box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    transform: rotate(2880deg);
+}
+
+.change-font-delay {
+    border: solid 1px black;
+    position: relative;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    font-size: 14px;
+}
+
+.change-font-delay:hover {
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    font-size: 36px;
+}
+
+.rotate-flag {
+    color: blue;
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+}
+
+.skew-flag {
+    color: green;
+    transform: skew(20deg) translateX(150px);
+    transform-origin: bottom left;
+}
+
+.slide {
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 110%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+}
