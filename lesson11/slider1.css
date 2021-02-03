@@ -1,0 +1,75 @@
+.slider {
+	width: 600px;
+	height: 350px;
+	margin: auto;
+	margin-top: 25px;
+	border: 1px solid black;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+	width: 600px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+    left: 0;
+    animation-name: slide;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* @keyframes slide {
+	from { top: 0px; left: 0px; }
+	frame1 { transform: translate(0px, 0px); }
+	frame2 { transform: translate(-600px, 0px); }
+	frame3 { transform: translate(-600px, 350px); }
+	frame4 { transform: translate(600px, 350px); }
+	frame5 { transform: translate(600px, 0px); }
+	to  { transform: (0px, 0px); }
+} */
+
+@keyframes slide {
+    from {
+     top: 0px;
+     left: 0px;
+    }
+    12.5% {
+     transform: translate(0px, 0px);
+    }
+    25% {
+     transform: translate(-600px, 0px);
+    }
+    36% {
+     transform: translate(-600px, 350px);
+    }
+    37% {
+     transform: translate(600px, 350px);
+    }
+    87.5% {
+     transform: translate(600px, 0px);
+     
+    }
+    to {
+     transform: (0px, 0px);
+    }
+   }
+
+   .slide1 { 
+    background: url(img/image1.jpg);
+    animation-delay: 7.5s;
+   }
+   .slide2 { 
+    background: url(img/image2.jpg);
+    animation-delay: 5s;
+   }
+   .slide3 { 
+    background: url(img/image3.jpg);
+    animation-delay: 2.5s;
+   }
+   .slide4 { 
+    background: url(img/image4.jpg);
+    animation-delay: 0s;
+   }
+
