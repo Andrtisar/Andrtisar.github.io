@@ -299,7 +299,7 @@ nav .fa-bars {
     transform: rotate(720deg);
 }
 
-.for-sale {
+#for-sale {
     position: relative;
     text-align: left;
     width: 5.8em;
@@ -325,6 +325,19 @@ nav .fa-bars {
 }
 
 /* Slider stuff */
+
+#java-slider {
+    width: 200px;
+    margin-left: 43%;
+    align-self: center;
+    background-color: lightskyblue;
+    border: 3px solid darkred;
+}
+#catPhoto {
+    height: 300px;
+    width: 168.75px;
+}
+
 
 .slider {
     position:relative;

@@ -4,6 +4,17 @@
     <title>The BEST Internet Shop - other products</title>
     <link rel="stylesheet" href="../shop-styles/main.css">
     <script src="https://kit.fontawesome.com/3b88d962a4.js" crossorigin="anonymous"></script>
+    <script>
+        let catPhotoCount = 4;
+		let currentCatPhoto = 1;
+
+        function nextPhoto() {
+			currentCatPhoto++;
+			if(currentCatPhoto > catPhotoCount) currentCatPhoto = 1;
+			let elem = document.getElementById("catPhoto");
+			elem.src = "../images/cat/cat" + currentCatPhoto + ".jpg";
+		}
+    </script>
 </head>
 <body class="main-style">
     <header>
@@ -71,14 +82,18 @@
         </div>
 
         <h3>The same pictures, but now as a slider, for some reason. Maybe I will find some new pictures at some point.</h3>
-        <div class="slider">
+        <!-- <div class="slider">
             <input type="radio" name="slider__check" class="slider__check" id="slider__check-1" checked><label for="slider__check-1" class="slider__label">1</label><img src="../images/cat/bed.jpg" alt="" class="slider__image">
             <input type="radio" name="slider__check" class="slider__check" id="slider__check-2"><label for="slider__check-2" class="slider__label">2</label><img src="../images/cat/computer.jpg" alt="" class="slider__image">
             <input type="radio" name="slider__check" class="slider__check" id="slider__check-3"><label for="slider__check-3" class="slider__label">3</label><img src="../images/cat/fridge.jpg" alt="" class="slider__image">
             <input type="radio" name="slider__check" class="slider__check" id="slider__check-4"><label for="slider__check-4" class="slider__label">4</label><img src="../images/cat/podium.jpg" alt="" class="slider__image">
         </div>
         <p class="rant-i-guess">... yeah, this is pretty much the same thing as in the slider2, I know. This slider stuff is just too complicated for me right now, its also already late, I can't read all of that and re-invent the wheel.</p>
-        <p class="rant-i-guess">Maybe I should have started this ealier, but I had quite a lot of regular lessons and homework and tests and... Managing time is hard.</p>
+        <p class="rant-i-guess">Maybe I should have started this ealier, but I had quite a lot of regular lessons and homework and tests and... Managing time is hard.</p> -->
+        <div id="java-slider">
+            <img id="catPhoto" src="../images/cat/cat1.JPG">
+            <button onclick="nextPhoto()">Next Photo</button>
+        </div>
         <a href="../shop.html" class="main-link">Back to main product</a>
     </footer>
     
