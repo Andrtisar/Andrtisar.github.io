@@ -1,0 +1,12 @@
+.gallery {
+    text-align: center;
+}
+
+.gallery img {
+    margin: 0.25rem;
+}
+
+.footer {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
