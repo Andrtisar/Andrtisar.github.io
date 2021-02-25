@@ -42,3 +42,17 @@ function handleClick() {
 
 let newButton = document.querySelector(".new-button");
 newButton.onclick = handleClick;
+
+// missed a lot of stuff
+
+let buttons = document.getElementsByClassName("switch");
+for(button of buttons) {
+    button.onclick = function(eventObject) {
+        console.log("A");
+        eventObject.target.style.backgroundColor = "green";
+    }
+    button.onmouseout = function(eventObject) {
+        console.log("B");
+        eventObject.target.style.backgroundColor = null;
+    }
+}
