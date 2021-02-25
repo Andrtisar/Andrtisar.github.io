@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <title>Juan-les-Pins</title>
+        <meta charset="UTF-8">
+        <style>
+            .main-style {
+                background-color: lightskyblue;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .float-left {
+                float: left;
+                max-height: 200px;
+                margin: 20px;
+                border: 2px grey solid;
+            }
+            .float-right {
+                float: right;
+                max-height: 200px;
+                margin: 20px;
+                border: 2px grey solid;
+            }
+            .first-box {
+                min-height: 200px; 
+                padding: 10px;
+            }
+            .second-box {
+                width: 75%;
+                margin-left: 12.5%;
+                margin-right: 12.5%;
+            }
+            .source {
+                float: right;
+                font-style: italic;
+            }
+            .center-flex {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            .flex {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                width: 50%;
+                border: darkred 5px dotted;
+                padding: 5px;
+                background-color: deepskyblue;
+                min-width: 600px;
+            }
+            .gallery-img {
+                max-width: 200px;
+            }
+        </style>
+    </head>
+    <body class="main-style">
+        <h1 style="margin-left: 20px">Nie wiem, na jaki temat mam zrobić tą stronę.</h1>
+        <h3 style="margin-left: 20px">Więc wylosuję artykuł z <a href="https://pl.wikipedia.org">Wikipedii</a> i zrobię na ten temat.</h3>
+        <img class="float-left" src="Juan.jpg">
+        <img class="float-right" src="Juan-Les-Pins.jpg">
+        <div class="first-box">
+            <p>Juan-les-Pins jest miastem uzdrowiskowym w południowo-wschodzniej części Francji.</p>
+            <p>Juan-les-Pins znajduje się między Niceą a Cannes; nad Morzem Śródziemnym. Miasto dzieli około 13 kilometrów do <a href="https://pl.wikipedia.org/wiki/Port_lotniczy_Nicea-Lazurowe_Wybrze%C5%BCe">portu lotniczego Corte d’Azur</a>. Położone jest na zachód od miasta Antibes, na zachodnim zboczu pasma górskiego. </p>
+            <p>12 marca 1882 roku wieś została nazwana Juan-les-Pins. W 1883, zdecydowano się na budowę dworca kolejowego w Juan-les-Pins, w linii Paryż-Lyon-Morze Śródziemne (PLM), która przechodziła już przez miasto w 1863 roku. </p> 
+            <a class="source" href="https://pl.wikipedia.org/wiki/Juan-les-Pins">Źródło</a>
+        </div>
+        <div class="second-box">
+            <hr>
+            <p>Ze względu na swoje atrakcyjne położenie przy Morzu Śródziemnym, w miejscowości jest wiele atrakcji dla turystów. Oto niektóre z nich: </p>
+            <ul>
+                <li>Juan-les-Pins Mian Beach</li>
+                <li>Parc de la Pinède</li>
+                <li>Palais des Congrès Antibes Juan-les-Pins</li>
+                <li>Square Frank Jay Gold.</li>
+            </ul>
+        </div>
+        <div class="center-flex">
+            <div class="flex">
+                <img class= "gallery-img" src="Eugene-Chigot-Juan-les-Pins.jpg">
+                <img class= "gallery-img" src="Juan-Les-Pins-hotel.jpg">
+                <img class= "gallery-img" src="Juan-Les-Pins-Boulevard-Édouard-Baudoin.jpg">
+            </div>
+        </div>
+    </body>
+</html>
