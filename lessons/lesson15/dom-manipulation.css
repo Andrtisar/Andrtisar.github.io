@@ -10,3 +10,13 @@
     font-size: 1.25rem;
     font-weight: bold;
 }
+
+.red-border {
+    border: 0.25rem red solid;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
