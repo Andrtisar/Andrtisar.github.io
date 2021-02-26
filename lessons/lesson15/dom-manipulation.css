@@ -12,7 +12,7 @@
 }
 
 .red-border {
-    border: 0.25rem red solid;
+    border: 0.25rem solid red;
 }
 
 button {
@@ -20,6 +20,7 @@ button {
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
+
 #buttons-container {
     margin: 2rem;
     padding: 2rem;
