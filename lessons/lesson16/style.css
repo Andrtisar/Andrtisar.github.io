@@ -1,0 +1,31 @@
+form {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom: 0.2rem solid blue;    
+} 
+
+button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.img-container {
+    display: inline-block;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.img-style {
+    display: block;
+    border: 0.1rem black solid;
+    margin: 0.2rem; 
+}
+
+ #add {
+     background-color: red;
+ }
