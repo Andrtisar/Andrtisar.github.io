@@ -32,21 +32,25 @@ for (button of buttons) {
 
 let question = document.querySelector("#question");
 
+let correctAnswer = 4;
+
 question.onclick = function() {
-    let answer = prompt("How many cats are on the screen?", "# of cats");
-    // if(answer == 4 || answer == "Four" || answer == "four" || answer == "4 cats"|| answer == "Four cats" || answer == "four cats" || answer == "4 of cat" || answer == "Four of cat" || answer == "four of cat" || answer == "Banana") alert("Correct!");
-    if(answer == 4) alert("Correct");
+    let answer = prompt("How many cats on the screen?", "# of cats");
+    if (answer == correctAnswer) alert("Correct!")
     else alert("Count again.");
 }
 
 let add = document.querySelector("#add");
 
-add.onclick = function() {
+add.onclick = function () {
     let addCat = confirm("Do you need a new cat?");
-    if(addCat) {
+    if (addCat) {
+
+        correctAnswer += 1;
+
         let gallery = document.getElementById("additional-cats-gallery");
         let img = document.createElement("img");
-        img.src = "https://loremflickr.com/350/350/cats?random="+Date.now();
+        img.src= "https://loremflickr.com/350/350/cats?random="+Date.now();
         gallery.appendChild(img);
     }
 }

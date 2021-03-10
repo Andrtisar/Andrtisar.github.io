@@ -6,17 +6,20 @@
 	</head>
 	<body>
 		<!-- <form action=”..” method=”get/post”></form>	-->
+		<!-- test.php?name=Вася&like=cats&likeHamster=yes&education=none&agree=1 -->
 		<form action="test.php" method="get">
-			<div>
+			<h3>Анкета</h3>
+			<div class="sub-form">
 				<label for="name">Имя</label><br />
 				<input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
 			</div>
-			<div>
+			<div class="sub-form">
 				Вам больше нравятся<br />
 				<input type="radio" name="like" id="likeCats" value="cats" required><label for="likeCats">Кошки</label>
 				<input type="radio" name="like" id="likeDogs" value="dogs" required><label for="likeDogs">Собаки</label>
+				<input type="radio" name="likeHamster" id="likeHamster" value="yes"><label for="likeHamster">Хомяки</label>
 			</div>
-			<div>
+			<div class="sub-form">
 				<label for="education">Я сейчас</label>
 				<select name="education" id="education">
 					<option value="school">учусь в школе</option>
@@ -26,15 +29,15 @@
 					<option value="none">ничего не знаю</option>
 				</select>
 			</div>
-			<div>
+			<div class="sub-form">
 				<label for="agree">Согласие на обработку персональных данных</label>
 				<input type="checkbox" name="agree" id="agree" value="1">
 			</div>
-			<div>
+			<div class="buttons">
 				<button type="reset">Очистить форму</button>
 				<button type="submit">Отправить данные</button>
 			</div>
 		</form>
-		<script src="forms.js"></script>
+		<script src="forms.js"></script>	
 	</body>
 </html>

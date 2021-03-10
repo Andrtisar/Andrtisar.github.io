@@ -4,8 +4,12 @@ document.querySelector('form').onsubmit = function(event) {
 
     let form = event.target;
     console.log(form['name'].value);
+    console.log(form['like'].value);
+    console.log(form['likeHamster'].checked);
+    console.log(form['education'].value);
+    console.log(form['agree'].checked);
 
-    if(!form['agree'].checked) {
+    if (!form['agree'].checked) {
         document.querySelector('label[for=agree]').style.color = "red";
         document.querySelector('label[for=agree]').style.fontWeight = "bold";
     }
@@ -14,30 +18,23 @@ document.querySelector('form').onsubmit = function(event) {
         document.querySelector('label[for=agree]').style.fontWeight = null;
 
         let message = form['name'].value;
-        if(form['education'].value == "school") {
-            message += " is in school and ";
-        }
-        else if(form['education'].value == "univer") {
-            message += " is in university and ";
-        }
-        else if(form['education'].value == "work ") {
-            message += " works and ";
-        }
-        else if(form['education'].value == "other") {
-            message += " won't say anything, but ";
-        }
-        else {
-            message += " doesn't know, but ";
-        }
+        if (form['education'].value == "school") message += " учится в школе и ";
+        else if (form['education'].value == "univer") message += " учится в университете и ";
+        else if (form['education'].value == "work") message += " работает и ";
+        else if (form['education'].value == "other") message += " ничего не расскажет, но ";
+        else message += " просто ";
 
-        message += "likes";
-        if(form['like'].value == "cats") {
-            message += " cats.";
-        }
-        else if(form['like'].value == "dogs") {
-            message += " dogs.";
-        }
+        message += "обожает ";
         
+        if (form['like'].value == "cats") message += "кошек.";
+        else if (form['like'].value == "dogs") message += "собак.";
+
+        if (form['likeHamster'].checked) message += " А так же хомяков.";
+
         alert(message);
+
+        let newBlock = document.createElement("p");
+        newBlock.innerText = message;
+        document.querySelector("body").appendChild(newBlock);
     }
 }

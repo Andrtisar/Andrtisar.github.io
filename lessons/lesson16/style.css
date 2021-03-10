@@ -26,6 +26,35 @@ button {
     margin: 0.2rem; 
 }
 
- #add {
+#add {
      background-color: red;
- }
+}
+
+
+form {
+    text-align:justify;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    align-items: center;
+    background-color: lightgreen;
+    border: dotted 5px darkseagreen;
+    border-radius: 1rem;
+}
+
+.sub-form {
+    margin-bottom: 1rem;
+    width: 75%;
+}
+
+.buttons {
+    margin: 0.5rem;
+    background-color: lightskyblue;
+    border: solid 3px darkred;
+    border-radius: 0.5rem;
+    max-width: 10em;
+    text-align: center;
+}
