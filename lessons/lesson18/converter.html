@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+        <meta charset="UTF-8">
+		<title>Конвертер валют</title>
+        <link rel="stylesheet" href="converter.css">
+        <script src="js/jquery-3.6.0.js"></script>
+	</head>
+	<body>					
+        <label for="sum">Сумма</label>
+        <input type="text" name="sum" id="sum" placeholder="Сумма в валюте" size="15">
+
+        <label for="currency">Валюта</label>
+        <select name="currency" id="currency">
+            <option value="EUR">&euro;</option>
+            <option value="USD">$</option>
+        </select>
+
+        <label for="result">Сумма в гривнах:</label>
+        <input type="text" name="result" id="result" size="15" readonly="true">
+
+        <button type="button" id=calculte>Посчитать</button>
+
+        <script type="text/javascript" src="js/converter.js"></script>
+	</body>
+</html>
