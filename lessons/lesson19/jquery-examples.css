@@ -1,0 +1,56 @@
+div {
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.defaultStyle {
+    color: red;
+    border: 0.5rem solid green;
+}
+
+.betterStyle {
+    color: blue;
+    border: 0.5rem dotted purple;
+}
+
+#cat {
+    display: none;
+}
+
+/* Slider */
+
+.slider-box{
+    width:350px;
+    height:350px;
+    overflow:hidden;
+}
+
+.slider{
+    position:relative;
+    width:10000px;
+    height:350px;
+}
+
+.slider img{
+    float:left;
+    z-index:0;
+}
+
+/* Modal */
+#boxes .window {
+    position:fixed;
+    width:440px;
+    height:200px;
+    display:none;
+    z-index:9999;
+    padding:20px;
+}  
+  
+/* Стилизуем наше модальное окно, как угодно */
+#boxes #dialog {
+    width:375px;
+    height:203px;
+    background-color: seagreen;
+    border: 0.2rem black solid;
+}
