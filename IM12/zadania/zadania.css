@@ -1,0 +1,78 @@
+.kwadrat {
+    height: 80px;
+    width: 80px;
+    /* Jako że padding już dodaje 20px */
+    background-color: green;
+    padding: 10px;
+}
+
+
+header {
+    color: orangered;
+    background-color: black;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.offset {
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    left: 25%;
+    position: relative;
+}
+
+.nav {
+    background-color: darkgray;
+    width: 25%;
+    height: 100%;
+    color: rgb(50, 50, 50);
+    float: left;
+    text-align: right;
+    padding: 10px;
+    font-size: 22px;
+    line-height: 6px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.content {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    height: 100%;
+    width: 75%;
+    margin-left: 25%;
+    padding: 10px;
+}
+
+.content p {
+    margin-left: 20px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    background-color: lightgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 75px;
+    left: 0px;
+    margin: 0px;
+    position: fixed;
+    padding: 0px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 35px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+}

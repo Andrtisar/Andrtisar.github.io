@@ -1,8 +1,8 @@
-div {
+/* div {
     margin: 2rem;
     font-size: 2rem;
     font-weight: bold;
-}
+} */
 
 .defaultStyle {
     color: red;
@@ -17,6 +17,100 @@ div {
 #cat {
     display: none;
 }
+
+/* Exersie 1 - sliding pannel */
+
+#panel {
+    background: #754c24;
+    height: 200px;
+    display: none;
+}
+
+.slide {
+    margin: 0;
+    padding: 0;
+    border-top: solid 4px #422410;
+    background: url(img/btn-slide.gif) no-repeat center top;
+}
+
+.btn-slide {
+    background: url(img/white-arrow.gif) no-repeat right -50px;
+    text-align: center;
+    width: 144px;
+    height: 31px;
+    padding: 10px 10px 0 0;
+    margin: 0 auto;
+    display: block;
+    font: bold 120%/100% Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.active {
+    background-position: right 12px;
+}
+
+/* Exersie 2 - running square */
+
+#box {
+    background: #6699FF;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+/* Exersie 3 - accordeon */
+
+.accordion {
+    width: 480px;
+    border-bottom: solid 1px #c4c4c4;
+  }
+
+  .accordion h3 {
+    background: #e9e7e7 url(images/arrow-square.gif) no-repeat right -51px;
+    padding: 7px 15px;
+    margin: 0;
+    font: bold 120%/100% Arial, Helvetica, sans-serif;
+    border: solid 1px #c4c4c4;
+    border-bottom: none;
+    cursor: pointer;
+  }
+
+  .accordion h3:hover {
+    background-color: #e3e2e2;
+  }
+
+  .accordion h3.active {
+    background-position: right 5px;
+  }
+
+  .accordion p {
+    background: #f7f7f7;
+    margin: 0;
+    padding: 10px 15px 20px;
+    border-left: solid 1px #c4c4c4;
+    border-right: solid 1px #c4c4c4;
+  }
+
+/* Exersie 4 - gallery */
+
+#largeImg {
+      border: solid 1px #ccc;
+      width: 350px;
+      height: 350px;
+      padding: 5px;
+    }
+
+    .thumbs img {
+      border: solid 1px #ccc;
+      width: 85px;
+      height: 85px;
+      padding: 5px;
+    }
+
+    .thumbs img:hover {
+      border-color: #FF9900;
+    }
 
 /* Slider */
 
