@@ -30,8 +30,8 @@
 
 .menu {
     width: 200px;
-    height: 119px;
-    background-color: #004b70;
+    /*  height: 119px;
+    background-color: #004b70; */
     color: white;
     font-size: 12px;
     font-family: Arial;
@@ -42,7 +42,8 @@
     padding: 7px;
     margin: 0px;
     border-top: solid 1px white;
-    margin-left: 10px;
+    /*margin-left: 10px; */
+    border-left: solid 10px #004b70;
     background-color: #006699;
 }
 .menu p:first-child {
