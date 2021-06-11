@@ -30,7 +30,7 @@
 
 .menu {
     width: 200px;
-    height: 116px;
+    min-height: 116px;
     background-color: #004b70;
     color: white;
     font-size: 12px;
